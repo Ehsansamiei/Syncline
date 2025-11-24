@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Syncline.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54b46a3a7173d2c6c5a76bd0bc789f4ca87ccc51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+905ad399a7bbf3e5f2ae696b3df1a3d15084077b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Syncline.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Syncline.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
