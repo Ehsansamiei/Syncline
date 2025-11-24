@@ -6,7 +6,8 @@ namespace Syncline.Domain.Entities
     {
         public Guid Id { get; set; }
         public string UserId { get; set; } = default;
+        public string RoomId { get; set; } = default;
         public string Message { get; set; } = default;
-        public DateTime CreatedAt { get; set; }
+        public DateTime SentAt { get; set; } = DateTime.UtcNow;
     }
 }
