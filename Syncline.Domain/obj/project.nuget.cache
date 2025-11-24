@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8C7tcmXrWqs=",
+  "dgSpecHash": "5F4xlhBINtI=",
   "success": true,
   "projectFilePath": "/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/Syncline.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/ehsan/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/ehsan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

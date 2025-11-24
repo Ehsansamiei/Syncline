@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Syncline.Application\Syncline.Application.csproj" />
+    <ProjectReference Include="..\Syncline.Persistence\Syncline.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

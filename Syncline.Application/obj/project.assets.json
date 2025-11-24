@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net8.0": {
+      "Syncline.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Syncline.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Syncline.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Syncline.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Syncline.Domain/Syncline.Domain.csproj",
+      "msbuildProject": "../Syncline.Domain/Syncline.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net8.0": [
+      "Syncline.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/ehsan/.nuget/packages/": {}
@@ -23,16 +42,20 @@
         "/home/ehsan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "projectReferences": {}
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/Syncline.Domain.csproj": {
+              "projectPath": "/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/Syncline.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -48,8 +71,8 @@
       "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -61,6 +84,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

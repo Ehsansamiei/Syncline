@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FduhanDaQdXK6vA4EmMvnMSuaL72R9N28Vl9iRuLJq0=",
+  "Source": "Syncline.Api",
+  "BasePath": "_content/Syncline.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

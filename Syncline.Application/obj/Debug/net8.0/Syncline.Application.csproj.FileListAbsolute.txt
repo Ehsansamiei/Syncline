@@ -1,0 +1,16 @@
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/bin/Debug/net8.0/Syncline.Application.deps.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/bin/Debug/net8.0/Syncline.Application.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/bin/Debug/net8.0/Syncline.Application.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/bin/Debug/net8.0/Syncline.Domain.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/bin/Debug/net8.0/Syncline.Domain.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.csproj.AssemblyReference.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.AssemblyInfoInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.AssemblyInfo.cs
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.csproj.CoreCompileInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.sourcelink.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.51BCE85A.Up2Date
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/refint/Syncline.Application.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/Syncline.Application.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Application/obj/Debug/net8.0/ref/Syncline.Application.dll

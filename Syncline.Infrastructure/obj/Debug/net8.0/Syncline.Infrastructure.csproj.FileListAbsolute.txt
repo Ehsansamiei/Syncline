@@ -1,0 +1,16 @@
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/bin/Debug/net8.0/Syncline.Infrastructure.deps.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/bin/Debug/net8.0/Syncline.Infrastructure.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/bin/Debug/net8.0/Syncline.Infrastructure.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/bin/Debug/net8.0/Syncline.Domain.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/bin/Debug/net8.0/Syncline.Domain.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.csproj.AssemblyReference.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.AssemblyInfoInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.AssemblyInfo.cs
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.csproj.CoreCompileInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.sourcelink.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.FA5502A6.Up2Date
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/refint/Syncline.Infrastructure.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/Syncline.Infrastructure.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Infrastructure/obj/Debug/net8.0/ref/Syncline.Infrastructure.dll

@@ -1,0 +1,12 @@
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/bin/Debug/net8.0/Syncline.Domain.deps.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/bin/Debug/net8.0/Syncline.Domain.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/bin/Debug/net8.0/Syncline.Domain.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.AssemblyInfoInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.AssemblyInfo.cs
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.csproj.CoreCompileInputs.cache
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.sourcelink.json
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/refint/Syncline.Domain.dll
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/Syncline.Domain.pdb
+/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Domain/obj/Debug/net8.0/ref/Syncline.Domain.dll
