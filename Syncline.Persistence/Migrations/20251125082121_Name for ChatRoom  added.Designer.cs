@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Syncline.Persistence.Context;
@@ -11,9 +12,11 @@ using Syncline.Persistence.Context;
 namespace Syncline.Persistence.Migrations
 {
     [DbContext(typeof(SynclineDbContext))]
-    partial class SynclineDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251125082121_Name for ChatRoom  added")]
+    partial class NameforChatRoomadded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,28 +25,11 @@ namespace Syncline.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("ChatRoom", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ChatRooms");
-                });
-
             modelBuilder.Entity("Syncline.Domain.Entities.ChatMessage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
-
-                    b.Property<string>("ChatRoomId")
-                        .HasColumnType("text");
 
                     b.Property<string>("Message")
                         .IsRequired()
@@ -62,21 +48,7 @@ namespace Syncline.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ChatRoomId");
-
                     b.ToTable("ChatMessages");
-                });
-
-            modelBuilder.Entity("Syncline.Domain.Entities.ChatMessage", b =>
-                {
-                    b.HasOne("ChatRoom", null)
-                        .WithMany("Messages")
-                        .HasForeignKey("ChatRoomId");
-                });
-
-            modelBuilder.Entity("ChatRoom", b =>
-                {
-                    b.Navigation("Messages");
                 });
 #pragma warning restore 612, 618
         }

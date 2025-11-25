@@ -11,6 +11,12 @@ public class RoomRepository : IRoomRepository
         _context = context;
     }
 
+    public async Task<ChatRoom> CreateRoomAsync(ChatRoom room)
+    {
+        _context.ChatRooms.Add(room);
+        await _context.SaveChangesAsync();
+        return room;
+    }
 
     public Task JoinRoomAsync(string ConnectionId, string roomId)
     {

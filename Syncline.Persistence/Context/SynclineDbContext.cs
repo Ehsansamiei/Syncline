@@ -11,4 +11,5 @@ public class SynclineDbContext : DbContext
     }
 
     public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
+    public DbSet<ChatRoom> ChatRooms => Set<ChatRoom>();
 }
