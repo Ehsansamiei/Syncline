@@ -45,7 +45,7 @@ The project is designed with a clean architecture to separate concerns between d
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ehsansamiei/Syncline.git
 cd Syncline
 ```
 2. Configure your PostgreSQL connection string in Syncline.Api/appsettings.json
