@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/home/ehsan/EHsan/Projects/MyProjects/C#/Syncline/Syncline.Api/wwwroot/test.html",
+      "PackagePath": "staticwebassets/test.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Syncline.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Syncline.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Syncline.Api.props",
+      "PackagePath": "build\\Syncline.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Syncline.Api.props",
+      "PackagePath": "buildMultiTargeting\\Syncline.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Syncline.Api.props",
+      "PackagePath": "buildTransitive\\Syncline.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

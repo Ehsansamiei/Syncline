@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.SignalR;
 namespace Syncline.Api.Hubs;
+
 public class ChatHub : Hub
 {
     private readonly IMessageService _messageService;
@@ -12,10 +13,20 @@ public class ChatHub : Hub
         _roomService = roomService;
     }
 
+    public override Task OnConnectedAsync()
+    {
+        return base.OnConnectedAsync();
+    }
+
+    public override Task OnDisconnectedAsync(Exception? exception)
+    {
+        return base.OnDisconnectedAsync(exception);
+    }
+
 
     public async Task SendMessage(string roomId, string user, string message)
     {
-        await _messageService.CreateMessage(roomId, user, message);
+        var saved = await _messageService.CreateMessage(roomId, user, message);
 
     }
 
@@ -25,6 +36,11 @@ public class ChatHub : Hub
         await Groups.AddToGroupAsync(Context.ConnectionId, roomId);
     }
 
-    
+    public async Task LeaveRoom(string roomId)
+    {
+        await Groups.RemoveFromGroupAsync(Context.ConnectionId, roomId);
+        await _roomService.LeaveRoom(Context.ConnectionId, roomId);
+    }
+
 
 }

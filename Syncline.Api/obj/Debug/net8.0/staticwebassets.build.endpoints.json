@@ -1,5 +1,88 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "test.html",
+      "AssetFile": "test.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Nov 2025 17:21:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo="
+        }
+      ]
+    },
+    {
+      "Route": "test.sdmn77hkdz.html",
+      "AssetFile": "test.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Nov 2025 17:21:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sdmn77hkdz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo="
+        },
+        {
+          "Name": "label",
+          "Value": "test.html"
+        }
+      ]
+    }
+  ]
 }

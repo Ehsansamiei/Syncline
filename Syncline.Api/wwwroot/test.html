@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Syncline Chat Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+</head>
+<body>
+  <h3>Syncline Test</h3>
+  <input id="room" placeholder="room id" />
+  <input id="user" placeholder="user" />
+  <input id="message" placeholder="message" />
+  <button id="joinBtn">Join Room</button>
+  <button id="sendBtn">Send (via Hub)</button>
+  <ul id="msgs"></ul>
+
+  <script>
+    const hubUrl = "http://localhost:5068/chatHub"; // یا https پورت پروژه‌ات
+    const connection = new signalR.HubConnectionBuilder()
+      .withUrl(hubUrl)
+      .withAutomaticReconnect()
+      .build();
+
+    connection.on("ReceiveMessage", (msg) => {
+      const li = document.createElement("li");
+      li.textContent = `${msg.user}: ${msg.message} (${msg.createdAt})`;
+      document.getElementById("msgs").appendChild(li);
+    });
+
+    connection.start().then(() => console.log("connected")).catch(e => console.error(e));
+
+    document.getElementById("joinBtn").onclick = async () => {
+      const room = document.getElementById("room").value;
+      await connection.invoke("JoinRoom", room);
+      console.log("joined", room);
+    };
+
+    // send via Hub (optional)
+    document.getElementById("sendBtn").onclick = async () => {
+      const room = document.getElementById("room").value;
+      const user = document.getElementById("user").value;
+      const message = document.getElementById("message").value;
+      await connection.invoke("SendMessageToRoom", room, user, message);
+    };
+  </script>
+</body>
+</html>

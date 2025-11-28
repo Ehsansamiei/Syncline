@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Syncline.Api/test.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\test.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1632"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00228DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Nov 2025 17:21:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Syncline.Api/test.sdmn77hkdz.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\test.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sdmn77hkdz"},{"Name":"integrity","Value":"sha256-8DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo="},{"Name":"label","Value":"_content/Syncline.Api/test.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1632"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00228DurC4LDH/TRraEaX8aQqof1xPwQscKaIvodIY3AyPo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Nov 2025 17:21:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
