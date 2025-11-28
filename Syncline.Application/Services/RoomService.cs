@@ -9,6 +9,18 @@ public class RoomService : IRoomService
         _roomRepository = roomRepository;
     }
 
+    public async Task<ChatRoom> CreateRoomAsync(string name)
+    {
+        var room = new ChatRoom()
+        {
+            Id = Guid.NewGuid().ToString(),
+            Name = name
+
+        };
+
+        return await _roomRepository.CreateRoomAsync(room);
+    }
+
     public async Task JoinRoom(string ConnectionId, string roomId)
     {
         await _roomRepository.JoinRoomAsync(ConnectionId, roomId);

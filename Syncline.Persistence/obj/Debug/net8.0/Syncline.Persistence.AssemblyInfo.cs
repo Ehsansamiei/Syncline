@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Syncline.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e8ad2b277d4cc0d3d74705961aa064c0d4a21eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c375c92fed81053d09b8a561c694dc15a1d4720")]
 [assembly: System.Reflection.AssemblyProductAttribute("Syncline.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Syncline.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

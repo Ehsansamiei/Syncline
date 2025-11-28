@@ -69,7 +69,7 @@ dotnet run
 https://localhost:5001/chathub
 ```
 
-# 📌 Architecture
+## 📌 Architecture
 
 Domain Layer – Entities and interfaces
 
