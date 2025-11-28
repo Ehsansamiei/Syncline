@@ -1,6 +1,6 @@
 
 using Microsoft.AspNetCore.SignalR;
-
+namespace Syncline.Api.Hubs;
 public class ChatHub : Hub
 {
     private readonly IMessageService _messageService;
@@ -15,8 +15,8 @@ public class ChatHub : Hub
 
     public async Task SendMessage(string roomId, string user, string message)
     {
-        var chatMessage = await _messageService.CreateMessage(roomId, user, message);
-        await Clients.Group(roomId).SendAsync("ReceiveMessage", chatMessage);
+        await _messageService.CreateMessage(roomId, user, message);
+
     }
 
     public async Task JoinRoom(string roomId)
@@ -25,6 +25,6 @@ public class ChatHub : Hub
         await Groups.AddToGroupAsync(Context.ConnectionId, roomId);
     }
 
-
+    
 
 }

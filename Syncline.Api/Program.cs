@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Syncline.Persistence.Context;
 using Syncline.Persistence.Repositories;
-
+using Syncline.Api.Hubs;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
