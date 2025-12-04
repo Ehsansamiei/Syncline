@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Syncline.Persistence.Context;
 using Syncline.Persistence.Repositories;
 using Syncline.Api.Hubs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,11 +20,20 @@ builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 builder.Services.AddScoped<IRoomService, RoomService>();
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 
+
 builder.Services.AddDbContext<SynclineDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 var app = builder.Build();
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+    });
+});
 
 
 // Configure the HTTP request pipeline.

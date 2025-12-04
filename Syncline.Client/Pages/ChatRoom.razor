@@ -1,0 +1,28 @@
+@page "/chat/{RoomId}"
+@using Syncline.Client.Models
+@using Syncline.Client.Services
+@inject ChatService Chat
+@code {
+    [Parameter] public string RoomId { get; set; }
+
+    List<ChatMessageDto> Messages = new();
+    string user = "ehsan";
+    string inputMessage = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        Chat.OnMessageReceived += (msg) =>
+        {
+            Messages.Add(msg);
+            InvokeAsync(StateHasChanged);
+        };
+
+        await Chat.Connect(RoomId);
+    }
+
+    async Task Send()
+    {
+        await Chat.SendMessage(RoomId, user, inputMessage);
+        inputMessage = "";
+    }
+}
