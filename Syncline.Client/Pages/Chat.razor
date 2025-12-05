@@ -1,0 +1,49 @@
+@page "/chat/{RoomId}"
+
+@inject ChatService ChatService
+@inject MessageApiService Api
+
+<h3>Chat Room: @RoomId</h3>
+
+<input @bind="msg" placeholder="Write message..." />
+<button @onclick="Send">Send</button>
+
+<ul>
+    @foreach (var m in messages)
+    {
+        <li><b>@m.UserId:</b> @m.Message</li>
+    }
+</ul>
+
+@code {
+
+    [Parameter]
+    public string RoomId { get; set; }
+
+    string msg = "";
+    List<ChatMessageDto> messages = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        ChatService.OnMessageReceived += HandleMessage;
+        await ChatService.Connect(RoomId);
+    }
+
+    private void HandleMessage(ChatMessageDto m)
+    {
+        messages.Add(m);
+        InvokeAsync(StateHasChanged);
+    }
+
+    private async Task Send()
+    {
+        await Api.SendMessage(new CreateMessageDto
+        {
+            RoomId = RoomId,
+            User = "ehsan",
+            Message = msg
+        });
+
+        msg = "";
+    }
+}
